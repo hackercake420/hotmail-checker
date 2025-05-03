@@ -8,12 +8,13 @@ dead = open('dead.txt', 'w')
 
 def banner():
     print(f"""{Fore.LIGHTYELLOW_EX}
-  _____   ________  ___    ___  ____  
- /  _  \  \_____  \/   |  /   | \   \ 
-/  /_\  \   _(__  )\/    \/    |  \   \
-|    |    \  /  / /    Y    /  |   \   \
-|___|  /  /____/ /___|  /___|__  /   /
-     \/            \/       \/    \/   
+
+   _____  __________._____________________    _________
+  /  _  \ \____    /|   \____    /\_____  \  /   _____/
+ /  /_\  \  /     / |   | /     /  /   |   \ \_____  \ 
+/    |    \/     /_ |   |/     /_ /    |    \/        \
+\____|__  /_______ \|___/_______ \\_______  /_______  /
+        \/        \/            \/        \/        \/ 
 
 {Fore.LIGHTBLUE_EX}Github: {Fore.LIGHTCYAN_EX}@azizos09
 {Fore.LIGHTBLUE_EX}Telegram: {Fore.LIGHTCYAN_EX}@azizos
@@ -50,11 +51,11 @@ def check_emailpass(emailpass):
     c = check('Checking...', 'Checking...', e[0], e[0], e[1])
     if c is None:
         with open('live.txt', 'a') as file:
-            file.write(emailpass)
+            file.write(emailpass)file.write(emailpass.strip() + '\n')
         print(Fore.CYAN, emailpass, Fore.WHITE, '->', Fore.LIGHTGREEN_EX, 'Login Success', Fore.WHITE)
     else:
         with open('dead.txt', 'a') as file:
-            file.write(emailpass)
+            file.write(emailpass.strip() + '\n')
         print(Fore.CYAN, emailpass, Fore.WHITE, '->', Fore.LIGHTRED_EX, c, Fore.WHITE)
     return
 
