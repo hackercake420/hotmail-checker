@@ -21,7 +21,7 @@ A fast and efficient Python tool for validating Hotmail/Outlook email accounts b
 ## Requirements
 
 - Python 3.6+
-- Dependencies listed in `requirements.txt` (e.g., `colorama`)
+- Dependencies listed in `requirements.txt`
 
 ## Installation
 
