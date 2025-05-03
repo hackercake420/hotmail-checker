@@ -28,7 +28,7 @@ A fast and efficient Python tool for validating Hotmail/Outlook email accounts b
 ```bash
 git clone https://github.com/azizos001/hotmail-checker.git
 cd hotmail-checker
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 
 Ensure `emails.txt` is in the project directory with `email:password` combinations.
