@@ -30,3 +30,53 @@ git clone https://github.com/azizos001/hotmail-checker.git
 cd hotmail-checker
 pip install -r requirements.txt
 
+
+Ensure `emails.txt` is in the project directory with `email:password` combinations.
+
+---
+
+## Usage
+
+1. Prepare `emails.txt` with `email:password` combinations (one per line), e.g.:
+
+    ```
+    user1@hotmail.com:password123
+    user2@outlook.com:pass456
+    ```
+
+
+2. Check results:
+   - Valid accounts are saved to `live.txt`.
+   - nvalid accounts are saved to `dead.txt`.
+   - Console output shows login success or error messages with color coding.
+
+---
+
+## Example Output
+
+user1@hotmail.com:password123 -> Login Success
+user2@outlook.com:pass456 -> Authentication failed.
+
+
+---
+
+## Disclaimer
+
+This tool is for **educational purposes only**. Unauthorized use for illegal activities, such as unauthorized account access, is strictly prohibited.  
+The author is **not responsible** for any misuse. Ensure you have permission to test the accounts you are checking.
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to:
+
+- Create pull requests to enhance functionality or fix issues.
+
+---
+
+## Contact
+
+- Telegram: [@azizos](https://t.me/azizos)
+
+---
